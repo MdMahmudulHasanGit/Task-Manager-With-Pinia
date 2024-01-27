@@ -5,7 +5,6 @@
     <h1>Count {{ store.count }}</h1>
     <h2>Name {{ store.name }}</h2>
     <h2>List {{ store.list }}</h2>
-    <h2>Second Count {{ store.secondCount }}</h2>
   </div>
 </template>
 

@@ -1,4 +1,5 @@
 import { defineStore } from 'pinia'
+import { useName } from '../compasables/name'
 import { ref, computed } from 'vue'
 
 export const useCounterStore = defineStore('counter', () => {
@@ -8,6 +9,8 @@ export const useCounterStore = defineStore('counter', () => {
     const doubleCount = computed(() => {
         return count.value * 2
     })
+
+    const c_Name = useName()
 
 
     function increment() {
@@ -19,6 +22,7 @@ export const useCounterStore = defineStore('counter', () => {
         doubleCount,
         name,
         list,
+        c_Name,
         increment
     }
 
